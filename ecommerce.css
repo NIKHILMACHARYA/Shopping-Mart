@@ -63,6 +63,7 @@ header {
   transition-duration: 1s;
   background-color: rgb(243, 168, 7);
 }
+
 #input {
   height: 30px;
   width: 300px;
@@ -186,6 +187,7 @@ header a ion-icon {
 .product-info .add-to-cart:hover {
   background-color: rgb(243, 168, 7);
 }
+
 
 /* === SHOP PAGE LAYOUT === */
 .shop-section {
@@ -321,9 +323,6 @@ header a ion-icon {
 .shop-item:hover {
   transform: scale(1.03);
 }
-
-
-
 
 
 
@@ -539,6 +538,7 @@ footer {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 1250px) {
   .heading ul li {
     display: none;
@@ -730,3 +730,4 @@ footer {
     margin: 10px 0;
   }
 }
+
