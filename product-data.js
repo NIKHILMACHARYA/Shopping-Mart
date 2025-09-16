@@ -96,3 +96,45 @@ products.forEach(product => {
 
   container.appendChild(productDiv);
 });
+
+
+
+// import React, { useState, useContext } from 'react';
+// import api from '../api';
+// import { AuthContext } from '../contexts/AuthContext';
+// import { useNavigate } from 'react-router-dom';
+
+
+// export default function CreateCourse(){
+// const { user } = useContext(AuthContext);
+// const navigate = useNavigate();
+// const [form, setForm] = useState({ title:'', description:'', category:'' });
+
+
+// if (!user || (user.role !== 'instructor' && user.role !== 'admin')) {
+// return <p>Only instructors or admins can create courses.</p>;
+// }
+
+
+// const onChange = e => setForm({...form, [e.target.name]: e.target.value});
+// const onSubmit = async e => {
+// e.preventDefault();
+// try{
+// await api.post('/courses', form);
+// navigate('/courses');
+// }catch(err){ alert(err.response?.data?.msg || 'Error creating course'); }
+// };
+
+
+// return (
+// <div>
+// <h2>Create Course</h2>
+// <form onSubmit={onSubmit}>
+// <input name="title" placeholder="Title" value={form.title} onChange={onChange} />
+// <textarea name="description" placeholder="Description" value={form.description} onChange={onChange} />
+// <input name="category" placeholder="Category" value={form.category} onChange={onChange} />
+// <button type="submit">Create</button>
+// </form>
+// </div>
+// );
+// }
